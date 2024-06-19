@@ -1,0 +1,64 @@
+Unix code
+Ls is list
+•	ls -S sorts the files in order by size (note: options are case-sensitive so this is a capital S)
+•	ls -l shows the long format list of the files including size and file permissions (which is handy to know for security reasons)
+•	ls -lh shows long format with units for file size (eg K for kilobytes, M for megabytes etc) to make it easily readable by a user (human-readable)
+ls -a shows hidden files 
+cd .. go back to previous directory 
+cd (dirname) go into dir
+cat tell whats in text file
+cat (filename) 
+ssh thingname@ownersname
+For example, if you want to create a file of good cat and echo jokes, you can use the command:
+echo "Why are cats so good at video games?" > unix-jokes.txt
+echo adljsdh displays that
+When we want to append more text onto the end of our file we use two greater than signs >> instead of only one.
+Exit leave 
+cat --\ if file has weird name 
+You simply use cat followed by the filenames you want to join together and then use the > to redirect the contents of the files into a new file.
+cat file1.txt file2.txt > new-file.txt
+To view the Unix root directory using the Bash terminal you can use the command ls /
+ls -F for / after file
+To move back two directories we add another two dots and a /
+cd ../../
+grep is a command-line utility that allows you to search for specific patterns in text or files. It stands for Global Regular Expression Print.
+grep [options] pattern [files] 
+•	-i: ignore case when searching
+•	-v: invert the search and show lines that do not match the pattern
+•	-c: count the number of lines that match the pattern
+
+The wc command is often used to count occurrences in a file.
+•	wc -l [file] - returns the number of lines in a file.
+•	wc -w [file] - returns the number of words in a file.
+Don't forget that you can type wc --help in the editor below, to find some other options you can use with wc.
+-c, --bytes            
+  -m, --chars            
+  -l, --lines
+Grep 
+ -i case insensitive 
+Searches all things 
+ -r (thing) . 
+To unzip file 
+File.gz
+Pipe (|) makes previous output as next instructions input
+Sometimes multiple occurrences of a pattern can be found on the same line. To output all occurrences of a pattern use the -o option
+
+•	sort - sorts the file in ascending order.
+•	uniq - outputs each unique animal once.
+•	sort -r - will sort the output in reverse order r.
+•	head allows you to see the top lines of a specified output. For example head -1 will show the top line and head -2 the top two.
+•	tail could also be used to display the bottom lines of a file.
+ls | grep budget  	files with grep budget 
+ls | grep -E '.pdf|.txt' 		output those of either
+The asterisk (*) represents zero or more characters of any type. For example, the wildcard *.pdf would match any file that has a name ending in .pdf,
+grep  b*ber  playlist.txt
+
+cd dirpath (short for change directory) ● change folder cat filename Read the contents of a file 
+cat >> filename (short for concatenate) create a new file or append content to existing file 
+mv oldname newname Rename a file cp filename newfile Copy and paste 
+mv oldname  ./dirname copy and paste
+rm filename Delete a file 
+mkdir dirname Create a new directory 
+rmdir dirname Delete an empty directory
+
+sudo (command) is run as admin 
